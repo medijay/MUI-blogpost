@@ -67,24 +67,26 @@ const sidebar = {
     { title: 'March 2020', url: '#' },
     { title: 'February 2020', url: '#' },
     { title: 'January 2020', url: '#' },
-    { title: 'November 1999', url: '#' },
-    { title: 'October 1999', url: '#' },
-    { title: 'September 1999', url: '#' },
-    { title: 'August 1999', url: '#' },
-    { title: 'July 1999', url: '#' },
-    { title: 'June 1999', url: '#' },
-    { title: 'May 1999', url: '#' },
-    { title: 'April 1999', url: '#' },
+    { title: 'November 2019', url: '#' },
+    { title: 'October 2019', url: '#' },
+    { title: 'September 2019', url: '#' },
+    { title: 'August 2019', url: '#' },
   ],
   social: [
     { name: 'GitHub', icon: GitHubIcon },
-    { name: 'X', icon: XIcon },
+    { name: 'X', icon: XIcon, href: 'https://github.com/medijay' },
     { name: 'Facebook', icon: FacebookIcon },
   ],
 };
 
-// TODO remove, this demo shouldn't need to reset the theme.
-const defaultTheme = createTheme();
+
+const defaultTheme = createTheme({
+  palette:{
+    background: {
+      default:'#e0f2f1'
+    }
+  }
+});
 
 export default function Blog() {
   return (
@@ -111,8 +113,7 @@ export default function Blog() {
         </main>
       </Container>
       <Footer
-        title="Footer"
-        description="Something here to give the footer a purpose!"
+        title="Mj Inc"
       />
     </ThemeProvider>
   );
