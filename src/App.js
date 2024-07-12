@@ -112,7 +112,7 @@ export default function Blog() {
           </Grid>
         </main>
       </Container>
-      <Footer
+      <Footer className = "font-sans hover:font serif"
         title="Mj Inc"
       />
     </ThemeProvider>
