@@ -9,9 +9,9 @@ import Link from '@mui/material/Link';
 function Copyright() {
 
     return (
-        <Typography variant="body2" color="text.secondary" align="center">
+        <Typography variant="body2" color="#fafafa" align="center">
           {'Copyright © '}
-          <Link color="inherit" href="https://medijay.github.io">
+          <Link color="#fafafa" href="https://medijay.github.io">
             Get the website feeling
           </Link>{' '}
           {new Date().getFullYear()}
@@ -24,15 +24,15 @@ function Copyright() {
       const { description, title } = props;
     
       return (
-        <Box component="footer" sx={{ bgcolor: 'background.paper', py: 6 }}>
+        <Box component="footer" sx={{ bgcolor: '#212121', py: 6 }}>
           <Container maxWidth="lg">
-            <Typography variant="h6" align="center" gutterBottom>
+            <Typography  color="#fafafa" variant="h5" align="center" gutterBottom>
               {title}
             </Typography>
             <Typography
               variant="subtitle1"
               align="center"
-              color="text.secondary"
+              color="#fafafa"
               component="p"
             >
               {description}
