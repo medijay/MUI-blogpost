@@ -1,6 +1,5 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
@@ -12,8 +11,7 @@ function Header(props) {
 
   return (
     <React.Fragment>
-      <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Button size="small">Subscribe</Button>
+      <div>
         <Typography
           component="h2"
           variant="h5"
@@ -30,25 +28,22 @@ function Header(props) {
         <Button variant="outlined" size="small">
           Sign up
         </Button>
-      </Toolbar>
-      <Toolbar
+      </div>
+      <div
         component="nav"
         variant="dense"
         sx={{ justifyContent: 'space-between', overflowX: 'auto' }}
       >
         {sections.map((section) => (
-          <Link
-            color="inherit"
-            noWrap
-            key={section.title}
-            variant="body2"
-            href={section.url}
-            sx={{ p: 1, flexShrink: 0 }}
+          
+          <div className='font-sans text-xl italic font-bold tracking-wide text-blue-700 uppercase'>
+          <Link  
           >
             {section.title}
           </Link>
+            </div>
         ))}
-      </Toolbar>
+      </div>
     </React.Fragment>
   );
 }
