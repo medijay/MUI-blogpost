@@ -5,6 +5,7 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import { Box, Grid } from '@mui/material';
 
 function Header(props) {
   const { sections, title } = props;
@@ -14,8 +15,8 @@ function Header(props) {
       <div>
         <Typography
           component="h2"
-          variant="h5"
-          color="inherit"
+          variant="h3"
+          color="#004d40"
           align="center"
           noWrap
           sx={{ flex: 1 }}
@@ -29,21 +30,24 @@ function Header(props) {
           Sign up
         </Button>
       </div>
-      <div
+      <Grid container gap={6}>
+
+      <Box
         component="nav"
         variant="dense"
-        sx={{ justifyContent: 'space-between', overflowX: 'auto' }}
-      >
+        sx={{ flexDirection:'row', overflowX: 'auto', display:'block', m:'2rem', textAlign:'center', fontWeight:'bold' }}
+        >
         {sections.map((section) => (
           
-          <div className='font-sans text-xl italic font-bold tracking-wide text-blue-700 uppercase'>
-          <Link  
-          >
+          
+          <Link  >
+          
             {section.title}
           </Link>
-            </div>
+          
         ))}
-      </div>
+      </Box>
+        </Grid>
     </React.Fragment>
   );
 }
