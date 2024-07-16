@@ -93,7 +93,7 @@ export default function Blog() {
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="Blog" sections={sections} />
+        <Header title='blog'  sections={sections} />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
@@ -112,7 +112,7 @@ export default function Blog() {
           </Grid>
         </main>
       </Container>
-      <Footer className = "font-sans hover:font serif"
+      <Footer
         title="Mj Inc"
       />
     </ThemeProvider>
