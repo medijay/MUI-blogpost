@@ -5,14 +5,14 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-import { Box, Grid } from '@mui/material';
+import { Grid, Divider } from '@mui/material';
 
 function Header(props) {
   const { sections, title } = props;
 
   return (
     <React.Fragment>
-      <div>
+
         <Typography
           component="h2"
           variant="h3"
@@ -20,34 +20,34 @@ function Header(props) {
           align="center"
           noWrap
           sx={{ flex: 1 }}
-        >
+          >
           {title}
         </Typography>
         <IconButton>
           <SearchIcon />
         </IconButton>
-        <Button variant="outlined" size="small">
+        <Button variant="outlined" size="small" position="absolute">
           Sign up
         </Button>
-      </div>
-      <Grid container gap={6}>
+      
+        <Grid container justifyContent={'center'} spacing={8} divider={<Divider orientation='vertical' />} >
 
-      <Box
-        component="nav"
-        variant="dense"
-        sx={{ flexDirection:'row', overflowX: 'auto', display:'block', m:'2rem', textAlign:'center', fontWeight:'bold' }}
+        
+          
+       <Typography component="nav"
+        variant="dense"          
+        sx={{ overflowX: 'visible', m:'4rem', fontWeight:'bold',  }}
         >
-        {sections.map((section) => (
-          
-          
+        {sections.map((section) => (         
           <Link  >
-          
             {section.title}
           </Link>
           
         ))}
-      </Box>
+      </Typography>
+      
         </Grid>
+        
     </React.Fragment>
   );
 }
