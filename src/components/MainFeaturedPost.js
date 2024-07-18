@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from 'prop-types';
 import Paper  from "@mui/material/Paper";
 import Typography  from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
+import blog from './blog-post1.md'
+import ReactMarkdown from 'react-markdown'
 
 function MainFeaturedPost(props) {
     const {post} = props;
+
+    const [postMarkdown, setPostMarkdown] = useState('');
+
+    useEffect(() => {
+        fetch(blog)
+        .then((response) => response.text())
+        .then((text) => {
+            setPostMarkdown(text);
+        });
+    });
+
+    
 
     return (
         <Paper
@@ -48,9 +62,12 @@ function MainFeaturedPost(props) {
                         <Typography variant="h5" color="inherit" paragraph>
                             {post.description}
                         </Typography>
-                        <Link variant="subtitle1" href="#">
+                        <Link>
+                        <ReactMarkdown 
+                         children ={postMarkdown} variant="subtitle1"  href="#" />
                             {post.linkText}
                         </Link>
+                        
                     </Box>
                 </Grid>
             </Grid>
