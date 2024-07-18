@@ -81,6 +81,7 @@ const sidebar = {
 
 
 const defaultTheme = createTheme({
+  spacing:4,
   palette:{
     background: {
       default:'#e0f2f1'
