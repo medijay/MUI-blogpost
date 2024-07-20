@@ -73,15 +73,15 @@ const sidebar = {
     { title: 'August 2019', url: '#' },
   ],
   social: [
-    { name: 'GitHub', icon: GitHubIcon },
-    { name: 'X', icon: XIcon, href: 'https://github.com/medijay' },
-    { name: 'Facebook', icon: FacebookIcon },
+    {  icon: GitHubIcon },
+    {  icon: XIcon },
+    {  icon: FacebookIcon },
   ],
 };
 
 
 const defaultTheme = createTheme({
-  spacing:4,
+
   palette:{
     background: {
       default:'#e0f2f1'
@@ -108,13 +108,14 @@ export default function Blog() {
               title={sidebar.title}
               description={sidebar.description}
               archives={sidebar.archives}
-              social={sidebar.social}
+             
             />
           </Grid>
         </main>
       </Container>
       <Footer
         title="Mj Inc"
+        social={sidebar.social}
       />
     </ThemeProvider>
   );
