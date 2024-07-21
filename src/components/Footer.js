@@ -1,21 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Box } from '@mui/material';
+import { Box, Stack } from '@mui/material';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
-import {Stack} from '@mui/material';
+import Link from '@mui/material/Link'; 
+import { GitHub, Instagram, X } from '@mui/icons-material';
+
+
 
   
   function Footer(props) {
-    const { description, title, social } = props;
+    const { description, title } = props;
 
     return (
           <Box component="footer" sx={{ bgcolor: '#212121', py: 2}}>
 
-        <Typography variant="body2" color="#fafafa" align="center">
+        <Typography  variant="body2" color="inherit" align="center">
           {'Copyright © '}
-          <Link color="#fafafa" href="https://medijay.github.io">
+          <Link color="#b2dfdb" href="https://medijay.github.io">
             Get the website feeling
           </Link>{' '}
           {new Date().getFullYear()}
@@ -23,7 +25,7 @@ import {Stack} from '@mui/material';
         </Typography>
       
           <Container maxWidth="lg">
-            <Typography  color="#fafafa" variant="h5" align="center" gutterBottom>
+            <Typography  color="inherit" variant="h4" align="center" gutterBottom>
               {title}
             </Typography>
             <Typography
@@ -36,26 +38,30 @@ import {Stack} from '@mui/material';
             </Typography>
           </Container>
 
-    
-          <Typography>
+          <Container maxWidth='md' >
             <Stack direction={'row'} spacing={2} justifyContent={'flex-end'}>
 
+            <Link href='https://github.com/medijay'
+            color={'inherit'}
+            >
+              <GitHub />
+            </Link>
+            <Link href="https://x.com/Medihuncho"
+             color={'inherit'}
+            >
+              <X/>
+            </Link>
+            <Link href="https://www.linkedin.com/in/ahmed-gbenjo-81404a210/"
+             color={'inherit'}
+            >
+              <Instagram />
+            </Link>
+              </Stack>
 
-            {social.map((network) => (
-              <Link
-              display="grid"
-              variant="body1"
-              href="#"
-              key={network.name}
-              sx={{ mb: 0.5, }}
-              >
-                    <Stack direction="row" spacing={1} alignItems="center" color={'white'} >
-                        <network.icon />
-                    </Stack>
-                </Link>
-            ))}
-            </Stack>
-            </Typography>
+          </Container>
+
+    
+        
         
         </Box>
       );
@@ -65,13 +71,6 @@ import {Stack} from '@mui/material';
     Footer.prototype = {
         description: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired,
-
-                social: PropTypes.arrayOf(
-                    PropTypes.shape({
-                        icon: PropTypes.elementType,
-                        name: PropTypes.string.isRequired,
-                    })
-                  ),
     };
 
     export default Footer;
