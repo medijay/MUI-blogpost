@@ -3,7 +3,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import FacebookIcon from '@mui/icons-material/Facebook';
+import { Instagram } from '@mui/icons-material'; 
 import XIcon from '@mui/icons-material/X';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from './components/Header'
@@ -15,6 +15,7 @@ import Footer from './components/Footer';
 import post1 from './components/blog-post1.md';
 import post2 from './components/blog-post2.md';
 import post3 from './components/blog-post3.md';
+
 
 const sections = [
   { title: 'Technology', url: '#' },
@@ -73,9 +74,9 @@ const sidebar = {
     { title: 'August 2019', url: '#' },
   ],
   social: [
-    {  icon: GitHubIcon },
-    {  icon: XIcon },
-    {  icon: FacebookIcon },
+    {  icon: GitHubIcon, href:'https://github.com/medijay' },
+    {  icon: XIcon , href:"https://x.com/Medihuncho"},
+    {  icon: Instagram, href:"https://www.linkedin.com/in/ahmed-gbenjo-81404a210/"  },
   ],
 };
 
