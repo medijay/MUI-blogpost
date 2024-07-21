@@ -41,7 +41,7 @@ function Header(props) {
           <Typography
           sx={{minWidth: 100, display: 'grid', spacing: 2, direction: 'unset'}} >
       <Stack direction={'row'} 
-      divider={<Divider orientation='vertical' flexItem />} spacing={3} >
+      divider={<Divider orientation='vertical' flexItem />} spacing={2} mt={3} >
 
         {sections.map((section) => (         
           <Link >
