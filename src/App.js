@@ -2,9 +2,6 @@ import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import { Instagram } from '@mui/icons-material'; 
-import XIcon from '@mui/icons-material/X';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from './components/Header'
 import MainFeaturedPost from './components/MainFeaturedPost';
@@ -61,23 +58,9 @@ const featuredPosts = [
 const posts = [post1, post2, post3];
 
 const sidebar = {
-  title: 'About',
+  title: 'jay"s blog',
   description:
-    'Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.',
-  archives: [
-    { title: 'March 2020', url: '#' },
-    { title: 'February 2020', url: '#' },
-    { title: 'January 2020', url: '#' },
-    { title: 'November 2019', url: '#' },
-    { title: 'October 2019', url: '#' },
-    { title: 'September 2019', url: '#' },
-    { title: 'August 2019', url: '#' },
-  ],
-  social: [
-    {  icon: GitHubIcon, href:'https://github.com/medijay' },
-    {  icon: XIcon , href:"https://x.com/Medihuncho"},
-    {  icon: Instagram, href:"https://www.linkedin.com/in/ahmed-gbenjo-81404a210/"  },
-  ],
+    "jAY's blog gives you up to date story on technology, politics,business, culture and lots more...",
 };
 
 
