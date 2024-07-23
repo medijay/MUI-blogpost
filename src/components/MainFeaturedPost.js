@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import PropTypes from 'prop-types';
 import Paper  from "@mui/material/Paper";
 import Typography  from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
@@ -8,8 +7,17 @@ import Box from "@mui/material/Box";
 import blog from './blog-post1.md'
 import ReactMarkdown from 'react-markdown'
 
-function MainFeaturedPost(props) {
-    const {post} = props;
+function MainFeaturedPost() {
+
+
+    const mainFeaturedPost = {
+        title: 'Title of a longer featured blog post',
+        description:
+          "Multiple lines of text that form the lead, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
+        image: 'https://source.unsplash.com/random?wallpapers',
+        imageText: 'main image description',
+        linkText: 'Continue reading…',
+      };
 
     const [postMarkdown, setPostMarkdown] = useState('');
 
@@ -33,10 +41,10 @@ function MainFeaturedPost(props) {
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
-            backgroundImage: `url(${post.image})`,
+            backgroundImage: `url(${mainFeaturedPost.image})`,
         }}
         >
-            {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
+            {<img style={{ display: 'none' }} src={mainFeaturedPost.image} alt={mainFeaturedPost.mageText} />}
             <Box
             sx={{
                 position: 'absolute',
@@ -57,15 +65,15 @@ function MainFeaturedPost(props) {
                     }}
                     >
                         <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-                            {post.title}
+                            {mainFeaturedPost.title}
                         </Typography>
                         <Typography variant="h5" color="inherit" paragraph>
-                            {post.description}
+                            {mainFeaturedPost.description}
                         </Typography>
                         <Link>
                         <ReactMarkdown 
                          children ={postMarkdown} variant="subtitle1"  href="#" />
-                            {post.linkText}
+                            {MainFeaturedPost.linkText}
                         </Link>
                         
                     </Box>
@@ -75,14 +83,5 @@ function MainFeaturedPost(props) {
     );
 }
 
-MainFeaturedPost.propTypes = {
-    post: PropTypes.shape({
-        description: PropTypes.string.isRequired, 
-        image: PropTypes.string.isRequired, 
-        imageText: PropTypes.string.isRequired, 
-        linkText: PropTypes.string.isRequired, 
-        title: PropTypes.string.isRequired, 
-    }).isRequired,
-};
 
 export default MainFeaturedPost;
