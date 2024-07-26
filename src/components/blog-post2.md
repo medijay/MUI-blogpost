@@ -2,16 +2,6 @@
 
 _March 23, 2020 by [Matt](/)_
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
-
-Curabitur blandit tempus porttitor. **Nullam quis risus eget urna mollis** ornare vel eu leo.
-Nullam id dolor id nibh ultricies vehicula ut id elit.
-
-Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-Aenean lacinia bibendum nulla sed consectetur.
-
-Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+Analysts are growing optimistic about bitcoin's (BTC) price prospects after a rebound toward a crucial resistance level that capped gains earlier this week.
+Since testing the 50-day simple moving average support near $63,500, the leading cryptocurrency has bounced sharply to breach $67,000, CoinDesk data show, and is closing on a resistance line identified by the trendline connecting March and April highs. The so-called descending trendline proved a tough nut to crack on Monday – as well as when it last came into focus in May – becoming a level to beat for the bulls.
+That might happen soon, if the mood among analysts is a guide.
