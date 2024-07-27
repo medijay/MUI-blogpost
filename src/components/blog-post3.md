@@ -1,17 +1,3 @@
-# New feature
-
-_March 14, 2020 by [Tom](/)_
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.
-Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-ut fermentum massa justo sit amet risus.
-
-- Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-- Donec id elit non mi porta gravida at eget metus.
-- Nulla vitae elit libero, a pharetra augue.
-
-Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-Aenean lacinia bibendum nulla sed consectetur.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
+If elected, Trump said his day one plans included firing Gary Gensler, the influential chair of the Securities and Exchange Commission who is widely reviled in the crypto industry. The promise drew huge applause from the crowd. "I didn't know he was that unpopular," Trump said. Trump also said he will appoint a "a bitcoin and crypto advisory council" upon taking office.
+Trump arrived at Nashville's Music City Center after a major campaign fundraising event that targeted deep-pocketed crypto executives and raised tens of millions of dollars, according to sources. Thousands of bitcoiners camped out for hours to see the former president, a new convert to crypto after previously blasting digital assets. He's now the first president to appear at a bitcoin event.
+In the opening moments, he thanked the event's organizers, and said there were lots of legends in the room. Trump name checked several crypto figures including Tyler and Cameron Winklevoss, the founders of the Gemini crypto exchange, and MicroStrategy's Michael Saylor.
