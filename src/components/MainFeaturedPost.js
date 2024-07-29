@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from "react";
 import Paper  from "@mui/material/Paper";
 import Typography  from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
-import blog from './blog-post1.md'
-import ReactMarkdown from 'react-markdown'
+import blog from './blog-post1.md';
 import piczz from './images/piczz.svg'
 
 function MainFeaturedPost() {
+
 
 
     const mainFeaturedPost = {
@@ -19,18 +18,6 @@ function MainFeaturedPost() {
         imageText: 'main image description',
         linkText: 'Continue reading…',
       };
-
-    const [postMarkdown, setPostMarkdown] = useState('');
-    
-
-    useEffect(() => {
-        fetch(blog)
-        .then((response) => response.text())
-        .then((text) => {
-            setPostMarkdown(text);
-        });
-    });
-
     
 
     return (
@@ -72,10 +59,8 @@ function MainFeaturedPost() {
                         <Typography variant="h5" color="inherit" paragraph>
                             {mainFeaturedPost.description}
                         </Typography>
-                        <ReactMarkdown 
-                         children ={postMarkdown} variant="subtitle1"  href="#" 
-                          />
-                        <Link  to={postMarkdown}>
+                       
+                        <Link  href={blog} variant="subtitle1">
                             {mainFeaturedPost.linkText}
                         </Link>
                         
