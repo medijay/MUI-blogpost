@@ -27,41 +27,11 @@ const sections = [
   { title: 'Learn', url: '#' },
 ];
 
-const mainFeaturedPost = {
-  title: 'Title of a longer featured blog post',
-  description:
-    "Multiple lines of text that form the lead, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
-  image: 'https://source.unsplash.com/random?wallpapers',
-  imageText: 'main image description',
-  linkText: 'Continue reading…',
-};
 
-const featuredPosts = [
-  {
-    title: 'Featured post',
-    date: 'Nov 12',
-    description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
-    image: 'https://source.unsplash.com/random?wallpapers',
-    imageLabel: 'Image Text',
-  },
-  {
-    title: 'Post title',
-    date: 'Nov 11',
-    description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
-    image: 'https://source.unsplash.com/random?wallpapers',
-    imageLabel: 'Image Text',
-  },
-];
+
+
 
 const posts = [post1, post2, post3];
-
-const sidebar = {
-  title: 'jay"s blog',
-  description:
-    "jAY's blog gives you up to date story on technology, politics,business, culture and lots more...",
-};
 
 
 const defaultTheme = createTheme({
@@ -80,26 +50,20 @@ export default function Blog() {
       <Container maxWidth="lg">
         <Header title='blog'  sections={sections} />
         <main>
-          <MainFeaturedPost post={mainFeaturedPost} />
+          <MainFeaturedPost  />
           <Grid container spacing={4}>
-            {featuredPosts.map((post) => (
-              <FeaturedPost key={post.title} post={post} />
-            ))}
+              <FeaturedPost key={FeaturedPost.title} />
           </Grid>
           <Grid container spacing={5} sx={{ mt: 3 }}>
             <Main title="From the firehose" posts={posts} />
-            <Sidebar
-              title={sidebar.title}
-              description={sidebar.description}
-              archives={sidebar.archives}
+            <Sidebar />
+
              
-            />
           </Grid>
         </main>
       </Container>
       <Footer
         title="Mj Inc"
-        social={sidebar.social}
       />
     </ThemeProvider>
   );
