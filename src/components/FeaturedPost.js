@@ -10,7 +10,7 @@ function FeaturedPost() {
     
     const featuredPosts = [
         {
-          title: 'Featured post',
+          title1: 'Featured post',
           date: 'Nov 12',
           description:
             'This is a wider card with supporting text below as a natural lead-in to additional content.',
@@ -18,9 +18,9 @@ function FeaturedPost() {
           imageLabel: 'Image Text',
         },
         {
-          title: 'Post title',
+          title2: 'Post title',
           date: 'Nov 11',
-          description:
+          description1:
             'This is a wider card with supporting text below as a natural lead-in to additional content.',
           image: 'https://source.unsplash.com/random?wallpapers',
           imageLabel: 'Image Text',
@@ -33,13 +33,13 @@ function FeaturedPost() {
                 <Card sx={{ display:'flex' }}>
                     <CardContent sx={{ flex:1 }}>
                         <Typography component="h2" variant="h5">
-                            {featuredPosts.title}
+                            {featuredPosts.title1}
                         </Typography>
                         <Typography variant="subtitle1" color="text.secondary">
                             {featuredPosts.date}
                         </Typography>
                         <Typography variant="subtitle1" paragraph>
-                            {featuredPosts.description}
+                            {featuredPosts.description1}
                         </Typography>
                         <Typography variant="subtitle1" color="primary">
                             Continue reading...
