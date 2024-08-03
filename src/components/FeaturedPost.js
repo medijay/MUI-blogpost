@@ -10,7 +10,7 @@ function FeaturedPost() {
     
     const featuredPosts = [
         {
-          title1: 'Featured post',
+          title: 'Featured post',
           date: 'Nov 12',
           description:
             'This is a wider card with supporting text below as a natural lead-in to additional content.',
@@ -18,9 +18,9 @@ function FeaturedPost() {
           imageLabel: 'Image Text',
         },
         {
-          title2: 'Post title',
+          title: 'Post title',
           date: 'Nov 11',
-          description1:
+          description:
             'This is a wider card with supporting text below as a natural lead-in to additional content.',
           image: 'https://source.unsplash.com/random?wallpapers',
           imageLabel: 'Image Text',
@@ -32,9 +32,16 @@ function FeaturedPost() {
             <CardActionArea component="a" href="#">
                 <Card sx={{ display:'flex' }}>
                     <CardContent sx={{ flex:1 }}>
+                        {featuredPosts.map((post) =>(
+                         <FeaturedPost   key={post.title} post={post} />
+                        )
+                        
+                           
+                        )}
                         <Typography component="h2" variant="h5">
-                            {featuredPosts.title1}
+                            {featuredPosts.title}
                         </Typography>
+
                         <Typography variant="subtitle1" color="text.secondary">
                             {featuredPosts.date}
                         </Typography>
