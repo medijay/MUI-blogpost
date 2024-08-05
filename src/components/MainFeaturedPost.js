@@ -14,7 +14,7 @@ function MainFeaturedPost() {
         title: 'Title of a longer featured blog post',
         description:
           "Multiple lines of text that form the lead, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
-        image: piczz,
+        image: {piczz},
         imageText: 'main image description',
         linkText: 'Continue reading…',
       };

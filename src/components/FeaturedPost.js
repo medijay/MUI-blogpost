@@ -5,6 +5,8 @@ import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
+import blog from './blog-post2.md'
+import Link from "@mui/material";
 
 function FeaturedPost() {
     
@@ -48,9 +50,11 @@ function FeaturedPost() {
                         <Typography variant="subtitle1" paragraph>
                             {featuredPosts.description1}
                         </Typography>
+                         <Link to={blog}>
                         <Typography variant="subtitle1" color="primary">
                             Continue reading...
                         </Typography>
+                      </Link>
                     </CardContent>
                     <CardMedia
                     component="img"
