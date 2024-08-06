@@ -7,6 +7,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import blog from './blog-post2.md'
 import Link from "@mui/material";
+import {picszz} from './images/piczz.svg'
 
 function FeaturedPost() {
     
@@ -24,7 +25,7 @@ function FeaturedPost() {
           date: 'Nov 11',
           description:
             'This is a wider card with supporting text below as a natural lead-in to additional content.',
-          image: 'https://source.unsplash.com/random?wallpapers',
+          image: {picszz},
           imageLabel: 'Image Text',
         },
       ];
