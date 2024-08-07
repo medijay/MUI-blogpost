@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
 import blog from './blog-post1.md';
-import piczz from './images/piczz.svg'
+
 
 function MainFeaturedPost() {
 
@@ -14,7 +14,7 @@ function MainFeaturedPost() {
         title: 'Title of a longer featured blog post',
         description:
           "Multiple lines of text that form the lead, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
-        image: {piczz},
+    
         imageText: 'main image description',
         linkText: 'Continue reading…',
       };
