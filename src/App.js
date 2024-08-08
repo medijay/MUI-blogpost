@@ -9,9 +9,7 @@ import FeaturedPost from './components/FeaturedPost';
 import Main from './components/Main';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
-import post1 from './components/blog-post1.md';
-import post2 from './components/blog-post2.md';
-import post3 from './components/blog-post3.md';
+
 
 
 const sections = [
@@ -31,7 +29,6 @@ const sections = [
 
 
 
-const posts = [post1, post2, post3];
 
 
 const defaultTheme = createTheme({
@@ -55,7 +52,7 @@ export default function Blog() {
               <FeaturedPost key={FeaturedPost.title} />
           </Grid>
           <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Main title="From the firehose" posts={posts} />
+            <Main title="From the firehose"  />
             <Sidebar />
 
              
