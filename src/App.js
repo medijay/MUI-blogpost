@@ -21,7 +21,6 @@ const sections = [
   { title: 'Opinion', url: '#' },
   { title: 'Science', url: '#' },
   { title: 'Health', url: '#' },
-  { title: 'Style', url: '#' },
   { title: 'Learn', url: '#' },
 ];
 
