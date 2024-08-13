@@ -15,7 +15,6 @@ import Footer from './components/Footer';
 const sections = [
   { title: 'Technology', url: '#' },
   { title: 'Cryptocurrencies', url: '#' },
-  { title: 'Culture', url: '#' },
   { title: 'Business', url: '#' },
   { title: 'Politics', url: '#' },
   { title: 'Opinion', url: '#' },
