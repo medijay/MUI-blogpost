@@ -40,26 +40,28 @@ const defaultTheme = createTheme({
 
 export default function Blog() {
   return (
+
+      <main>
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
       <Container maxWidth="lg">
         <Header title='blog'  sections={sections} />
-        <main>
           <MainFeaturedPost  />
           <Grid container spacing={4}>
-              <FeaturedPost key={FeaturedPost.title} />
+              <FeaturedPost />
           </Grid>
           <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Main title="From the firehose"  />
+            <Main/>
             <Sidebar />
 
              
           </Grid>
-        </main>
       </Container>
       <Footer
         title="Mj Inc"
-      />
+        />
     </ThemeProvider>
+        </main>
+        
   );
 }
