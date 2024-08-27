@@ -12,22 +12,6 @@ import Footer from './components/Footer';
 
 
 
-const sections = [
-  { title: 'Technology', url: '#' },
-  { title: 'Cryptocurrencies', url: '#' },
-  { title: 'Business', url: '#' },
-  { title: 'Politics', url: '#' },
-  { title: 'Opinion', url: '#' },
-  { title: 'Science', url: '#' },
-  { title: 'Health', url: '#' },
-  { title: 'Learn', url: '#' },
-];
-
-
-
-
-
-
 
 const defaultTheme = createTheme({
 
@@ -45,7 +29,7 @@ export default function Blog() {
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title='blog'  sections={sections} />
+        <Header title='blog'  />
           <MainFeaturedPost  />
           <Grid container spacing={4}>
               <FeaturedPost />
