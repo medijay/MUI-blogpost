@@ -9,7 +9,19 @@ import { Box, Divider, Stack } from '@mui/material';
 
 
 function Header(props) {
-  const { sections, title } = props;
+  const {title } = props;
+
+
+  const sections = [
+    { title: 'Technology', url: '#' },
+    { title: 'Cryptocurrencies', url: '#' },
+    { title: 'Business', url: '#' },
+    { title: 'Politics', url: '#' },
+    { title: 'Opinion', url: '#' },
+    { title: 'Science', url: '#' },
+    { title: 'Health', url: '#' },
+    { title: 'Learn', url: '#' },
+  ];
 
   return (
     <React.Fragment>
