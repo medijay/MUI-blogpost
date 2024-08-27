@@ -19,7 +19,6 @@ function Header(props) {
     { title: 'Politics', url: '#' },
     { title: 'Opinion', url: '#' },
     { title: 'Science', url: '#' },
-    { title: 'Health', url: '#' },
     { title: 'Learn', url: '#' },
   ];
 
