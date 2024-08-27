@@ -17,7 +17,7 @@ function Header(props) {
     { title: 'Cryptocurrencies', url: '#' },
     { title: 'Business', url: '#' },
     { title: 'Politics', url: '#' },
-    { title: 'Opinion', url: '#' },
+    { title: 'Middle east', url: '#' },
     { title: 'Science', url: '#' },
     { title: 'Learn', url: '#' },
   ];
