@@ -9,7 +9,7 @@ function Sidebar() {
     const Sidebar = {
         title: 'jay"s blog',
         description:
-          "jAY's blog gives you up to date story on technology, politics,business, culture and lots more...",
+          "jAY's blog gives you up to date story on technology, politics,business,culture,religion  and lots more...",
       };
 
     return (
