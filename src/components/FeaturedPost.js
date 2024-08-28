@@ -16,7 +16,7 @@ function FeaturedPost() {
                 <Card sx={{ display:'flex' }}>
                     <CardContent sx={{ flex:1 }}>
                         
-                         <FeaturedPost    />
+                
                     
                         
                            

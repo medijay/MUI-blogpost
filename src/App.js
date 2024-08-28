@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 
 
 
+
 const defaultTheme = createTheme({
 
   palette:{
@@ -25,7 +26,7 @@ const defaultTheme = createTheme({
 export default function Blog() {
   return (
 
-      <main>
+      <>
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
       <Container maxWidth="lg">
@@ -35,17 +36,17 @@ export default function Blog() {
               <FeaturedPost />
           </Grid>
           <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Main/>
+            <Main />
             <Sidebar />
-
-             
           </Grid>
       </Container>
       <Footer
         title="Mj Inc"
         />
     </ThemeProvider>
-        </main>
         
+        </>
   );
 }
+
+             
