@@ -1,6 +1,7 @@
-import React from "react";
+import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+
 import Box from '@mui/material/Box';
 
 
@@ -18,7 +19,7 @@ function FeaturedPost() {
           onChange={handleChange}
           variant="scrollable"
           scrollButtons="auto"
-          aria-label="scrollable auto tabs example"
+          aria-label="Vertical tabs example"
         >
           <Tab label="Item One" />
           <Tab label="Item Two" />
