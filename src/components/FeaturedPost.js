@@ -20,6 +20,7 @@ function FeaturedPost() {
           variant="scrollable"
           scrollButtons="auto"
           aria-label="Vertical tabs example"
+          orientation='vertical'
         >
           <Tab label="Item One" />
           <Tab label="Item Two" />
