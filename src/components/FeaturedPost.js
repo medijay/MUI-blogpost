@@ -1,38 +1,68 @@
 import * as React from 'react';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-
-import Box from '@mui/material/Box';
+import { useState } from 'react';
 
 
 function FeaturedPost() {
-    const [value, setValue] = React.useState(0);
-
-    const handleChange = (event, newValue) => {
-      setValue(newValue);
-    };
+    const [currentTab, setCurrentTab] = useState('tab1');
+    const tabList = [
+        {
+            name: 'news1',
+            label: 'Tab 1',
+            content: (
+                <div className='tab-content'>
+                    <h2>New Content 1</h2>
+                    <p>This is the tab content. You can seperate this as a component.</p>
+                    <p>lorem ipsum die tent.</p>
+                </div>
+            )
+        },
+        {
+            name: 'news2',
+            label: 'Tab 2',
+            content: (
+                <div className='tab-content'>
+                    <h2>New Content 2</h2>
+                    <p>This is the tab content. You can seperate this as a component.</p>
+                    <p>lorem ipsum die tent.</p>
+                </div>
+            )
+        },
+        {
+            name: 'news3',
+            label: 'Tab 3',
+            content: (
+                <div className='tab-content'>
+                    <h2>New Content 1</h2>
+                    <p>This is the tab content. You can seperate this as a component.</p>
+                    <p>lorem ipsum die tent.</p>
+                </div>
+            )
+        }
+    
+    ];
 
     return (
-        <Box sx={{ maxWidth: { xs: 320, sm: 480 }, bgcolor: 'background.paper' }}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          variant="scrollable"
-          scrollButtons="auto"
-          aria-label="Vertical tabs example"
-          orientation='vertical'
-        >
-          <Tab label="Item One" />
-          <Tab label="Item Two" />
-          <Tab label="Item Three" />
-          <Tab label="Item Four" />
-          <Tab label="Item Five" />
-          <Tab label="Item Six" />
-          <Tab label="Item Seven" />
-        </Tabs>
-      </Box>
-    );
-  }
+        <div className='simple-tabs'>
+            <h1>With state hooks</h1>
 
+            <div className='tabs'>
+                {tabList.map((tab, i) => (
+                    <button key={i} onClick={() => setCurrentTab(tab.name)} className={tab.name === currentTab ? 'active' : ''}>
+                        {tab.label}
+                    </button>
+                ))}
+            </div>
+
+            {tabList.map((tab, i) => {
+                if (tab.name === currentTab) {
+                    return <div key={i}>{tab.current}</div>;
+                } else {
+                    return null;
+                }
+            })}
+        </div>
+    )
+}
+  
 
 export default FeaturedPost;
